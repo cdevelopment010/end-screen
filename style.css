@@ -45,7 +45,7 @@ h1 {
     position: relative;
     color: white;
     -webkit-text-fill-color: transparent;
-    -webkit-text-stroke: 2px;
+    -webkit-text-stroke: 3px;
     font-size: 9rem;
     font-weight: bold;
     animation: slide-left-1 5s alternate infinite linear;
@@ -76,6 +76,21 @@ h2 {
 
 }
 
+.awesome-container {
+    position: absolute; 
+    color: white;
+    /* color: #7E2DCF;  */
+    left: 25%; 
+    top: 50%;
+    font-size: 5rem;
+    transform: translate(-50%,-50%);
+}
+
+.awesome-container .awesome {
+    font-size: 7rem;
+    animation: slide-down 3s 2s forwards 1 linear;
+}
+
 
 
 @keyframes slide-left-1 {
@@ -100,5 +115,15 @@ h2 {
     }
     to {
         transform: translateX(0vw);
+    }
+}
+
+
+@keyframes slide-down {
+    from {
+        transform: translateY(-200%);
+    }
+    to {
+        transform: translateY(0);
     }
 }
